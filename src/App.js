@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import image from './images.png'; // Adjust this path according to your file structure
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <img src={image} alt="React logo" />
+      <h1>Fun Facts about React!</h1>
+      <ul>
+        <li>Was first released in 2013</li>
+        <li>Was originally created by Jordan Walke</li>
+        <li>Has well over 100k stars on GitHub</li>
+        <li>Is maintained by Facebook</li>
+        <li>Powers thousands of apps</li>
+      </ul>
     </div>
   );
 }
